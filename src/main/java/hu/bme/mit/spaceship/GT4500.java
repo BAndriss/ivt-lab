@@ -10,9 +10,9 @@ public class GT4500 implements SpaceShip {
 
   private boolean wasPrimaryFiredLast = false;
 
-  public GT4500(TorpedoStore torpedoStore) {
-    this.primaryTorpedoStore = torpedoStore;
-    this.secondaryTorpedoStore = torpedoStore;
+  public GT4500(TorpedoStore torpedoStore1, TorpedoStore torpedoStore2) {
+    this.primaryTorpedoStore = torpedoStore1;
+    this.secondaryTorpedoStore = torpedoStore2;
   }
 
   public boolean fireLaser(FiringMode firingMode) {
